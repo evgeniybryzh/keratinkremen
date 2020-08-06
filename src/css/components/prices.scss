@@ -1,0 +1,47 @@
+.prices {
+  padding: 50px 20px;
+  &__title {
+    @include font("sans-serif", 40px, 600, $pink);
+    font-style: italic;
+    margin-bottom: 50px;
+    text-align: center;
+    border-bottom: 2px solid $pink;
+  }
+  &__card-divider {
+    background-color: $white-smoke;
+    @include flex-main;
+    &:first-of-type {
+      border-bottom: 2px solid $pink;
+    }
+    &:nth-child(1) {
+      border-left: 2px solid $pink;
+    }
+    &:nth-child(2) {
+      border-right: 2px solid $pink;
+      border-bottom: 2px solid $pink;
+    }
+  }
+  &__name {
+    @include font("sans-serif", 40px, 600, $dark);
+    text-align: center;
+  }
+  &__price {
+    @include font("sans-serif", 40px, 600, $dark);
+    text-align: center;
+  }
+  &__card-text {
+    list-style: square;
+    @include font("sans-serif", 20px, 600, $dark);
+    font-style: italic;
+    letter-spacing: 2px;
+  }
+  &__pinked {
+    color: $pink;
+  }
+  &__card {
+    border-radius: 5px;
+    border-top: 2px solid $pink;
+    box-shadow: 0 0 0 3px $white-smoke, 0 0 0 4px rgba(154, 147, 140, 0.5);
+    min-height: 400px;
+  }
+}

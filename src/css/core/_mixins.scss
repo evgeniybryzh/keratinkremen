@@ -1,0 +1,88 @@
+// Margin - centering
+@mixin margin-center {
+  margin: 0 auto;
+}
+// Border - main values
+@mixin border($width, $type, $color) {
+  border-width: $width;
+  border-style: $type;
+  border-color: $color;
+}
+// Flex - main values
+@mixin flex-main($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+// Fonts + function calcRem
+@mixin font($family, $size, $weight, $color) {
+  font-family: $family;
+  font-size: calcRem($size);
+  font-weight: $weight;
+  color: $color;
+}
+@function calcRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+// Padding Hack + bgc
+
+@mixin padding-hack($padding: 50%, $bgc: black) {
+  position: relative;
+  height: 0;
+  padding-bottom: $padding;
+  background-color: $bgc;
+  img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+// Media query
+@mixin media-q($media-width) {
+  @media screen and (min-width: $media-width) {
+    @content;
+  }
+}
+//burger
+@mixin burger {
+  .burger {
+    width: 40px;
+    height: 40px;
+    @include flex-main(column, center, center);
+  }
+  .burger span,
+  .burger span:before,
+  .burger span:after {
+    border-radius: 1px;
+    height: 3px;
+    width: 35px;
+    background: white;
+    position: absolute;
+    display: block;
+    content: "";
+    transition: all 0.3s ease;
+  }
+  .burger span:before {
+    top: -10px;
+  }
+  .burger span:after {
+    bottom: -10px;
+  }
+  .burger:hover span:before {
+    width: 25px;
+  }
+  .burger:hover span:after {
+    width: 15px;
+  }
+}
+// Basic transition
+@mixin transition-basic($sec: 0.3s) {
+  transition: all $sec ease;
+}

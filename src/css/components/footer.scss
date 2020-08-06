@@ -1,0 +1,12 @@
+.footer {
+  min-height: 100px;
+  background-color: $footer-bg-color;
+  padding: 30px;
+  @include flex-main(column, center, center);
+  &__info {
+    @include font("sans-serif", 13px, 600, $white-smoke);
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+}

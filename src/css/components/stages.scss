@@ -1,0 +1,61 @@
+.stages {
+  background-color: $white-smoke;
+  padding: 50px 20px;
+  &__subtitle {
+    @include font("sans-serif", 40px, 600, $dark);
+    font-style: italic;
+    @include flex-main(row, center, flex-end);
+    margin-bottom: 25px;
+  }
+  &__title {
+    @include font("sans-serif", 40px, 600, $pink);
+    font-style: italic;
+    @include flex-main(row, center, center);
+  }
+  &__box {
+    @include flex-main(column, center, center);
+    text-align: center;
+    border-bottom: 2px solid $pink;
+    padding: 10px;
+    &:nth-child(1) {
+      border-right: 2px solid $pink;
+    }
+    &:nth-child(2) {
+      border-left: 2px solid $pink;
+    }
+  }
+  &__row {
+    // padding-top: 30px;
+  }
+  &__link {
+    color: $pink;
+  }
+  &__text {
+    @include font("sans-serif", 15px, 600, $dark);
+    font-style: italic;
+    text-align: center;
+  }
+  &__context-box {
+    @include flex-main(column, center, center);
+    border-bottom: 2px solid $pink;
+    padding: 10px;
+    &:nth-child(1) {
+      border-right: 2px solid $pink;
+    }
+    &:nth-child(2) {
+      border-left: 2px solid $pink;
+    }
+    &:nth-child(3) {
+      border-right: 2px solid $pink;
+    }
+    &:nth-child(4) {
+      border-left: 2px solid $pink;
+    }
+  }
+  &__image {
+    width: 100px;
+  }
+  &__name {
+    @include font("sans-serif", 25px, 600, $pink);
+  }
+}

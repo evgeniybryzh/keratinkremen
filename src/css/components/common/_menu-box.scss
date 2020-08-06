@@ -1,0 +1,42 @@
+.menu-box {
+  min-height: 80px;
+  border-bottom: 1px solid $darkgray;
+  &__nav-list {
+    @include flex-main(row, center, center);
+    padding-top: 5px;
+    margin-right: 40px;
+  }
+  &__link {
+    @include font(sans-serif, 13px, 600, $white-smoke);
+    letter-spacing: 0.4px;
+    @include transition-basic;
+    &:hover {
+      color: $pink;
+    }
+  }
+  &__logo {
+    height: 40px;
+    margin-bottom: -25px;
+  }
+  &__logo-box {
+    @include flex-main;
+  }
+  &__socials {
+    @include flex-main;
+  }
+  &__social-logo:not(:last-of-type) {
+    margin-right: 20px;
+  }
+  &__item {
+    border-bottom: 2px solid transparent;
+    border-top: 2px solid transparent;
+    border-radius: 10px;
+    @include transition-basic;
+    &:hover {
+      border-color: $pink;
+    }
+  }
+  &__nav {
+    @include flex-main;
+  }
+}

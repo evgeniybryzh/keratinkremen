@@ -1,0 +1,23 @@
+// Fonts
+// @import url("");
+// Core
+@import "./core/vars";
+@import "./core/inheritance";
+@import "./core/mixins";
+@import "./core/common";
+
+// components-->common
+@import "./src/css/components/common/menu-box";
+@import "./src/css/components/common/content-box";
+@import "./src/css/components/common/form";
+// Components
+
+@import "./src/css/components/header";
+@import "./src/css/components/greet";
+@import "./src/css/components/stages";
+@import "./src/css/components/gallery";
+@import "./src/css/components/materials";
+@import "./src/css/components/prices";
+@import "./src/css/components/sale";
+@import "./src/css/components/comments";
+@import "./src/css/components/footer";

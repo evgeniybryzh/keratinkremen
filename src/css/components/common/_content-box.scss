@@ -1,0 +1,33 @@
+.content-box {
+  padding: 0 20px;
+  &__content {
+    height: 800px;
+  }
+  &__list {
+    margin: 0px;
+    padding-bottom: 20px;
+  }
+  &__button {
+    width: 300px;
+    background-color: $pink;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: purple;
+    }
+  }
+  &__subtitle {
+    @include font("sans-serif", 40px, 500, $white);
+    font-style: italic;
+  }
+  &__title {
+    @include font("sans-serif", 60px, 600, $pink);
+    // line-height: 15px;
+    font-style: italic;
+    margin-bottom: 40px;
+  }
+  &__list-item {
+    @include font("sans-serif", 20px, 500, $white);
+    line-height: 25px;
+  }
+}

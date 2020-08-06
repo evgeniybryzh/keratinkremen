@@ -1,0 +1,19 @@
+.gallery {
+  padding: 50px 20px;
+  &__title {
+    @include font("sans-serif", 30px, 600, $pink);
+    font-style: italic;
+    margin-bottom: 50px;
+    text-align: center;
+    border-bottom: 2px solid $pink;
+  }
+}
+.orbit-caption {
+  background-color: $pink;
+}
+.orbit-next {
+  color: $pink;
+}
+.orbit-previous {
+  color: $pink;
+}
