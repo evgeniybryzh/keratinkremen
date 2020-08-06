@@ -44,7 +44,7 @@
     border-bottom: 2px solid $pink;
   }
   &__text {
-    @include font("sans-serif", 15px, 600, $dark);
+    @include font("sans-serif", 17px, 600, $dark);
     font-style: italic;
     text-align: center;
   }
@@ -63,11 +63,11 @@
     @include flex-main(row, space-between, center);
   }
   &__button {
-    background-color: $pink;
+    background-color: purple;
     padding: 20px;
     border-radius: 0 0 10px 10px;
     &:hover {
-      background-color: purple;
+      background-color: $pink;
     }
   }
   &__content-box {

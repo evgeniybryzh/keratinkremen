@@ -32,6 +32,7 @@
     line-height: 25px;
     @include flex-main(row, center, flex-start);
     text-align: center;
+    margin-bottom: 70px;
   }
   &__card-title {
     @include font("sans-serif", 30px, 600, $pink);

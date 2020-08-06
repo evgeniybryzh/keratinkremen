@@ -54,6 +54,7 @@ const path = {
     ROOT: "build/",
     HTML: "build/",
     JS: "build/js/",
+    PHP: "build/js/",
     STYLE: "build/css/",
     IMAGES: "build/images/",
     FONTS: "build/fonts/",

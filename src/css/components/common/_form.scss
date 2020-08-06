@@ -1,6 +1,8 @@
 .form {
   border-radius: 10px;
   @include flex-main(column, center, center);
+  box-shadow: whitesmoke 0px 0px 0px 3px,
+    rgba(154, 147, 140, 0.5) 0px 0px 0px 4px;
   &__button {
     width: 300px;
     background-color: $pink;

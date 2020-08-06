@@ -1,5 +1,6 @@
 .gallery {
   padding: 50px 20px;
+
   &__title {
     @include font("sans-serif", 30px, 600, $pink);
     font-style: italic;
@@ -16,4 +17,7 @@
 }
 .orbit-previous {
   color: $pink;
+}
+.orbit-image {
+  max-height: 10000px;
 }

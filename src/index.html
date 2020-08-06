@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="header__menu menu-box">
       <div class="container">
         <div class="men-box__wrapper grid-x grid-padding-y grid-padding-x">
@@ -616,15 +616,16 @@
       </div>
     </div>
   </section>
-  <form action="https://hooks.zapier.com/hooks/catch/7951976/ozydy6s" class="reveal form" id="form" data-reveal
-    name="call-form">
+  <form class="reveal form" id="form" data-reveal name="call-form">
     <h2 class="form__title">Заполните форму и мы вам перезвоним!</h2>
     <input name="fullName" type="text" class="form__input" required data-form-error-on="required"
       placeholder="Введите ваше имя">
     <input name="mPhone" type="number" class="form__input" required data-form-error-on="required"
       placeholder="Введите ваш номер телефона">
     <button id="form-button" class="button form__button">Отправить заявку</button>
-
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
 
 
   </form>

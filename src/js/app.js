@@ -5,3 +5,4 @@ var $ = require("jquery");
 Foundation.addToJquery($);
 $(document).foundation();
 useForm();
+

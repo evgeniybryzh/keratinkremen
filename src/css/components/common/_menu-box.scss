@@ -1,6 +1,7 @@
 .menu-box {
   min-height: 80px;
   border-bottom: 1px solid $darkgray;
+
   &__nav-list {
     @include flex-main(row, center, center);
     padding-top: 5px;
