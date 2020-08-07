@@ -8,6 +8,7 @@
 li {
   list-style: none;
 }
+
 input {
   outline: none;
 }
@@ -15,6 +16,13 @@ a {
   text-decoration: none;
   color: $dark;
 }
+a:active {
+  background-color: $footer-bg-color;
+}
+a:focus {
+  background-color: $footer-bg-color;
+}
+
 .container {
   max-width: 1300px;
   margin: 0 auto;
