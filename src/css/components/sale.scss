@@ -19,9 +19,14 @@
     padding-top: 30px;
   }
   &__subtitle {
-    @include font("sans-serif", 55px, 600, $white-smoke);
+    @include font("sans-serif", 30px, 500, $white-smoke);
     font-style: italic;
     text-align: center;
+    @include media-q($phone) {
+      @include font("sans-serif", 55px, 600, $white-smoke);
+      font-style: italic;
+      text-align: center;
+    }
   }
   &__pinked {
     color: $pink;
@@ -30,8 +35,9 @@
   &__button {
     background-color: $pink;
     border-radius: 10px;
+
     &:hover {
-      background-color: purple;
+      background-color: $hovered-btn;
     }
   }
 }

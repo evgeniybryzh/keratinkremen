@@ -1,14 +1,17 @@
 .menu-box {
   min-height: 80px;
-  border-bottom: 1px solid $darkgray;
+
+  box-shadow: 0 0 0 3px $pink, 0 0 0 6px $footer-bg-color;
 
   &__nav-list {
     @include flex-main(row, center, center);
     padding-top: 5px;
-    margin-right: 40px;
+    // margin-right: 40px;
   }
   &__link {
-    @include font(sans-serif, 13px, 600, $white-smoke);
+    @include font(sans-serif, 15px, 600, $white-smoke);
+    font-style: italic;
+    text-shadow: 0 0 5px $dark;
     letter-spacing: 0.4px;
     @include transition-basic;
     &:hover {
@@ -16,17 +19,31 @@
     }
   }
   &__logo {
-    height: 40px;
-    margin-bottom: -25px;
+    padding-top: 10px;
+    height: 150px;
+    width: 150px;
   }
   &__logo-box {
-    @include flex-main;
+    @include flex-main(row, center, center);
+    height: 70px;
+    width: 40px;
+    overflow: hidden;
+    margin-top: 5px;
   }
   &__socials {
     @include flex-main;
   }
   &__social-logo:not(:last-of-type) {
     margin-right: 20px;
+  }
+  &__social-logo {
+    padding: 5px;
+    border-radius: 30%;
+    background-color: $pink;
+    @include transition-basic;
+    &:hover {
+      background-color: $footer-bg-color;
+    }
   }
   &__item {
     border-bottom: 2px solid transparent;

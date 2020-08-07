@@ -1,20 +1,21 @@
 .header {
   min-height: 100vh;
-  background-image: url(../images/bg.jpg);
+  background-image: url(../images/bg.webp);
   background-attachment: inherit;
   background-position: center;
   background-size: cover;
   animation: none;
   @include media-q($tablet-w-wide) {
     background-attachment: fixed;
-    animation: bg 10s linear infinite alternate;
+    animation: bg 10s ease-in-out infinite alternate;
   }
 }
 @keyframes bg {
   0% {
-    background-size: 160%;
+    background-size: 190%;
   }
+
   100% {
-    background-size: 150%;
+    background-size: 180%;
   }
 }

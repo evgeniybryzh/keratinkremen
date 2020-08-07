@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html id="html" lang="ru">
 
 <head>
   <meta charset="utf-8" />
@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
 
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 </head>
 
 <body>
@@ -24,19 +25,22 @@
           <nav class="menu-box__nav cell small-12 large-8">
             <ul class="menu-box__nav-list menu">
               <li class="menu-box__item">
-                <a class="menu-box__link" href="#">О ботоксе и кератине</a>
+                <a class="menu-box__link" href="#first">О ботоксе и кератине</a>
               </li>
               <li class="menu-box__item">
-                <a class="menu-box__link" href="#">О процедуре</a>
+                <a class="menu-box__link" href="#second">О процедуре</a>
               </li>
               <li class="menu-box__item">
-                <a class="menu-box__link" href="#">Материалы</a>
+                <a class="menu-box__link" href="#third">Галлерея</a>
               </li>
               <li class="menu-box__item">
-                <a class="menu-box__link" href="#">Цены</a>
+                <a class="menu-box__link" href="#fourth">Материалы</a>
               </li>
               <li class="menu-box__item">
-                <a class="menu-box__link" href="#">Контакты</a>
+                <a class="menu-box__link" href="#fiveth">Цены</a>
+              </li>
+              <li class="menu-box__item">
+                <a class="menu-box__link" href="#six">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -76,7 +80,7 @@
       </div>
     </div>
   </header>
-  <section class="greet">
+  <section id="first" class="greet">
     <div class="container">
       <div class="geet__row grid-x greet-margin-y">
         <div class="greet__row-image cell small-12 large-6">
@@ -155,7 +159,7 @@
       </div>
     </div>
   </section>
-  <section class="stages">
+  <section id="second" class="stages">
     <div class="container">
       <div class="stages__row grid-x grid-padding-y grid-margin-x">
         <div class="stages__box cell smal-12 medium-6">
@@ -218,7 +222,7 @@
       </div>
     </div>
   </section>
-  <section class="gallery">
+  <section id="third" class="gallery">
     <h2 class="gallery__title">GALLERY</h2>
     <div class="container">
       <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
@@ -284,7 +288,7 @@
       </div>
     </div>
   </section>
-  <section class="materials">
+  <section id="fourth" class="materials">
     <div class="container">
       <div class="materials__row grid-x">
         <div class="materials__box cell small-12 medium-12 large-6">
@@ -318,7 +322,7 @@
       </div>
     </div>
   </section>
-  <section class="prices">
+  <section id="fiveth" class="prices">
     <div class="container">
       <h2 class="prices__title">Наши цены</h2>
       <div class="prices__row grid-x grid-padding-y grid-margin-x">
@@ -521,7 +525,7 @@
     </h3>
     <button data-open="form" class="sale__button button expanded large">Записаться на процедуру</button>
   </section>
-  <section class="comments">
+  <section id="six" class="comments">
     <div class="container">
       <div class="comments__row grid-x grid-padding-y grid-margin-x">
         <div class="comments__box cell small-12 medium-6">
@@ -618,9 +622,9 @@
   </section>
   <form class="reveal form" id="form" data-reveal name="call-form">
     <h2 class="form__title">Заполните форму и мы вам перезвоним!</h2>
-    <input name="fullName" type="text" class="form__input" required data-form-error-on="required"
+    <input id="name" name="fullName" type="text" class="form__input" required data-form-error-on="required"
       placeholder="Введите ваше имя">
-    <input name="mPhone" type="number" class="form__input" required data-form-error-on="required"
+    <input id="phone" name="mPhone" type="number" class="form__input" required data-form-error-on="required"
       placeholder="Введите ваш номер телефона">
     <button id="form-button" class="button form__button">Отправить заявку</button>
     <button class="close-button" data-close aria-label="Close modal" type="button">
