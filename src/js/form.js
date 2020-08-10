@@ -8,7 +8,7 @@ export const useForm = () => {
   const $phone = document.getElementById("phone");
   const $html = document.getElementById("html");
 
-  const formData = {};
+  const form_Data = {};
 
   const showThanks = (name) => {
     const modal = document.createElement("div");
@@ -26,24 +26,24 @@ export const useForm = () => {
   };
 
   document.addEventListener("click", (event) => {
-    formData.fullName = $name.value;
-    formData.phone = $phone.value;
+    form_Data.fullName = $name.value;
+    form_Data.phone = $phone.value;
     if (
       event.target == $button &&
-      formData.fullName != "" &&
-      formData.phone != ""
+      form_Data.fullName != "" &&
+      form_Data.phone != ""
     ) {
       event.preventDefault();
       $overlay.style.display = "none";
       $html.classList.remove("zf-has-scroll", "is-reveal-open");
-      showThanks(formData.fullName);
-      fetch("https://wh.automate.io/webhook/5f2c31b1adf7e235b343eed5", {
+      showThanks(form_Data.fullName);
+      fetch("./send.php", {
         // файл-обработчик
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded", // отправляемые данные
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(form_Data),
       }).catch((error) => console.error(error));
     }
   });

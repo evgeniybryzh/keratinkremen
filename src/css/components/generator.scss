@@ -26,11 +26,26 @@
       background-color: $hovered-btn;
     }
   }
+  &__l-button {
+    background-color: transparent;
+    border: 3px solid $pink;
+    padding: 20px 40px;
+    border-radius: 10px;
+    @include font("sans-serif", 30px, 500, $white-smoke);
+    font-style: italic;
+    text-align: center;
+    z-index: 30000;
+
+    &:hover {
+      background-color: $hovered-btn;
+    }
+  }
   &__body {
     width: 100%;
     min-height: 50vh;
     background-color: $white-smoke;
     display: none;
+    padding-left: 0;
     border-radius: 20px;
     box-shadow: 0 0 0 3px $pink, 0 0 0 6px $footer-bg-color;
     overflow: hidden;
@@ -45,6 +60,7 @@
   }
 
   &__upper-box {
+    overflow-y: scroll;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -55,11 +71,87 @@
     z-index: 200;
     @include flex-main(column, flex-start, center);
     padding: 20px;
+    @include media-q($phablet-big) {
+      overflow-y: hidden;
+    }
   }
   &__title {
-    padding-top: 50px;
-    @include font(sans-serif, 30px, 600, $pink);
+    padding-bottom: 0px;
+    @include font("sans-serif", 25px, 600, $pink);
     font-style: italic;
+    text-align: center;
     text-shadow: 0 0 3px $white;
+    line-height: 25px;
+    &:last-of-type {
+      padding-bottom: 0px;
+    }
+    @include media-q($phablet-big) {
+      padding-bottom: 30px;
+      @include font("sans-serif", 30px, 600, $pink);
+      font-style: italic;
+      text-shadow: 0 0 3px $white;
+      line-height: 40px;
+      &:last-of-type {
+        padding-bottom: 0px;
+      }
+    }
+  }
+  &__row {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  &__question {
+    margin-right: 2px;
+    flex-basis: 62%;
+    word-break: break-all;
+    @include font("sans-serif", 20px, 600, $white);
+    font-style: italic;
+    text-shadow: 0 0 3px $dark;
+    text-align: center;
+    @include media-q($phablet-big) {
+      @include font("sans-serif", 30px, 600, $white);
+      font-style: italic;
+      text-shadow: 0 0 3px $dark;
+      text-align: center;
+    }
+  }
+  &__choices {
+    text-align: center;
+  }
+  &__question-box {
+    box-shadow: 0 0 0 2px $white-smoke, 0 0 0 3px $pink;
+    border-radius: 0px;
+    @include flex-main(row, space-between, center);
+    @include media-q($phablet-big) {
+      box-shadow: 0 0 0 3px $white-smoke, 0 0 0 6px $pink;
+      border-radius: 2px;
+      display: block;
+    }
+  }
+  &__label {
+    @include font("sans-serif", 20px, 600, $white);
+    text-shadow: 0 0 3px $dark;
+  }
+  &__bg {
+    text-align: center;
+    padding: 50px;
+    padding-top: 20px;
+  }
+  &__subtitle {
+    @include font("sans-serif", 30px, 600, $white);
+    font-style: italic;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  &__free {
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+  &__big {
+    text-transform: uppercase;
+    text-decoration: underline;
+    @include font("sans-serif", 25px, 600, $white);
+    font-style: italic;
+    display: block;
   }
 }

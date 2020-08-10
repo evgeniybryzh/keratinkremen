@@ -7,10 +7,24 @@
   position: absolute;
   bottom: 1px;
   left: 50%;
-  margin-left: -200px;
+  margin-left: -160px;
   transform: translateZ(
     0
   ); /* offers a bit of a performance boost by pushing some of this processing to the GPU in Safari*/
+  @include media-q($phone-wide) {
+    animation: walk-cycle 1s steps(12) infinite;
+    background: url(http://stash.rachelnabors.com/img/codepen/tuna_sprite.png) 0
+      0 no-repeat;
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    margin-left: -200px;
+    transform: translateZ(
+      0
+    ); /* offers a bit of a performance boost by pushing some of this processing to the GPU in Safari*/
+  }
 }
 
 @keyframes walk-cycle {
@@ -30,8 +44,8 @@
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
   translate3d: (0, 0, 0);
-  border-radius: 20px;
 }
 
 .foreground {
