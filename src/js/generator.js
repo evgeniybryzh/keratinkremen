@@ -13,7 +13,10 @@ export const useGenerator = () => {
     }
     if (event.target === $secButton) {
       $genBody.style.display = "none";
-      $genSecBody.style.display = "block";
+      $genSecBody.style.display = "flex";
+      $genSecBody.style.justifyContent = "flex-start";
+      $genSecBody.style.alignItems = "center";
+      $genSecBody.style.flexDirection = "column";
     }
     if (event.target === $finButton) {
       $mainButton.style.display = "inline-block";

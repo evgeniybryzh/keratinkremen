@@ -1,21 +1,42 @@
 .menu-box {
   min-height: 80px;
-
   box-shadow: 0 0 0 3px $pink, 0 0 0 6px $footer-bg-color;
-
   &__nav-list {
-    @include flex-main(row, center, center);
+    @include flex-main(row, space-around, center);
     padding-top: 5px;
     // margin-right: 40px;
+    @include media-q($phone-wide) {
+      @include flex-main(row, center, center);
+      padding-top: 5px;
+    }
   }
+
   &__link {
     @include font(sans-serif, 15px, 600, $white-smoke);
     font-style: italic;
     text-shadow: 0 0 5px $dark;
     letter-spacing: 0.4px;
+    margin: 5px;
     @include transition-basic;
+    border: 2px solid $pink;
+    border-radius: 20px;
+    background-color: rgba($pink, $alpha: 0.5);
     &:hover {
-      color: $pink;
+      color: $white-smoke;
+    }
+    @include media-q($phone-wide) {
+      @include font(sans-serif, 15px, 600, $white-smoke);
+      font-style: italic;
+      text-shadow: 0 0 5px $dark;
+      letter-spacing: 0.4px;
+      margin: 0px;
+      @include transition-basic;
+      border: none;
+      border-radius: 0px;
+      background-color: transparent;
+      &:hover {
+        color: $pink;
+      }
     }
   }
   &__logo {
@@ -28,7 +49,10 @@
     height: 70px;
     width: 40px;
     overflow: hidden;
-    margin-top: 5px;
+    margin-top: 20px;
+    @include media-q(1165px) {
+      margin-top: 5px;
+    }
   }
   &__socials {
     @include flex-main;

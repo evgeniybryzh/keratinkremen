@@ -5,9 +5,9 @@
   height: 200px;
   width: 400px;
   position: absolute;
-  bottom: 1px;
+  bottom: 50px;
   left: 50%;
-  margin-left: -160px;
+  margin-left: -180px;
   transform: translateZ(
     0
   ); /* offers a bit of a performance boost by pushing some of this processing to the GPU in Safari*/

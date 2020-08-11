@@ -4,15 +4,21 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  padding: 20px 50px;
+  padding: 10px 20px;
 
   @include media-q($tablet) {
     background-attachment: fixed;
+    padding: 20px 50px;
   }
   &__container {
-    min-height: 50vh;
+    min-height: 100vh;
     position: relative;
     @include flex-main(column, center, center);
+    @include media-q($tablet) {
+      min-height: 50vh;
+      position: relative;
+      @include flex-main(column, center, center);
+    }
   }
   &__button {
     background-color: $pink;
@@ -42,21 +48,26 @@
   }
   &__body {
     width: 100%;
-    min-height: 50vh;
-    background-color: $white-smoke;
+    min-height: 90vh;
     display: none;
     padding-left: 0;
     border-radius: 20px;
     box-shadow: 0 0 0 3px $pink, 0 0 0 6px $footer-bg-color;
     overflow: hidden;
+    @include media-q($tablet) {
+      min-height: 50vh;
+    }
   }
   &__questions {
     width: 100%;
-    min-height: 50vh;
+    min-height: 90vh;
     background-color: $white-smoke;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
+    @include media-q($tablet) {
+      min-height: 50vh;
+    }
   }
 
   &__upper-box {
@@ -70,9 +81,10 @@
     bottom: 0;
     z-index: 200;
     @include flex-main(column, flex-start, center);
-    padding: 20px;
+    padding: 2px;
     @include media-q($phablet-big) {
       overflow-y: hidden;
+      padding: 20px;
     }
   }
   &__title {
@@ -82,6 +94,7 @@
     text-align: center;
     text-shadow: 0 0 3px $white;
     line-height: 25px;
+    margin-bottom: 20px;
     &:last-of-type {
       padding-bottom: 0px;
     }
@@ -102,9 +115,9 @@
   }
   &__question {
     margin-right: 2px;
-    flex-basis: 62%;
+    flex-basis: 95%;
     word-break: normal;
-    @include font("sans-serif", 20px, 600, $white);
+    @include font("sans-serif", 15px, 600, $white-smoke);
     font-style: italic;
     text-shadow: 0 0 3px $dark;
     text-align: center;
@@ -117,11 +130,14 @@
   }
   &__choices {
     text-align: center;
+    flex-basis: 5%;
   }
   &__question-box {
     box-shadow: 0 0 0 2px $white-smoke, 0 0 0 3px $pink;
     border-radius: 0px;
     @include flex-main(row, space-between, center);
+    padding: 5px;
+    margin-bottom: 20px;
     @include media-q($phablet-big) {
       box-shadow: 0 0 0 3px $white-smoke, 0 0 0 6px $pink;
       border-radius: 2px;
@@ -131,6 +147,21 @@
   &__label {
     @include font("sans-serif", 20px, 600, $white);
     text-shadow: 0 0 3px $dark;
+    border-radius: 5px;
+    width: 50px;
+    @include transition-basic;
+
+    @include media-q($phablet) {
+      @include font("sans-serif", 20px, 600, $white);
+      text-shadow: 0 0 3px $dark;
+      border-radius: 5px;
+      width: 50px;
+      @include transition-basic;
+    }
+  }
+  &__input:checked + .generator__label {
+    color: $white-smoke;
+    background-color: rgba($pink, $alpha: 0.7);
   }
   &__bg {
     text-align: center;
@@ -153,5 +184,6 @@
     @include font("sans-serif", 25px, 600, $white);
     font-style: italic;
     display: block;
+    padding-top: 10px;
   }
 }
