@@ -103,13 +103,13 @@
   &__question {
     margin-right: 2px;
     flex-basis: 62%;
-    word-break: break-all;
+    word-break: normal;
     @include font("sans-serif", 20px, 600, $white);
     font-style: italic;
     text-shadow: 0 0 3px $dark;
     text-align: center;
     @include media-q($phablet-big) {
-      @include font("sans-serif", 30px, 600, $white);
+      @include font("sans-serif", 20px, 600, $white);
       font-style: italic;
       text-shadow: 0 0 3px $dark;
       text-align: center;

@@ -37,7 +37,7 @@ export const useForm = () => {
       $overlay.style.display = "none";
       $html.classList.remove("zf-has-scroll", "is-reveal-open");
       showThanks(form_Data.fullName);
-      fetch("./send.php", {
+      fetch("send.php", {
         // файл-обработчик
         method: "POST",
         headers: {

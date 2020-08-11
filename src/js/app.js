@@ -1,9 +1,12 @@
 "use strict";
 import { useForm } from "./form";
 import { useGenerator } from "./generator";
+import { showQuestions, getLogic } from "./logic";
 var $ = require("jquery");
 // const { useForm } = require("./form");
 Foundation.addToJquery($);
 $(document).foundation();
 useForm();
 useGenerator();
+showQuestions();
+getLogic();
