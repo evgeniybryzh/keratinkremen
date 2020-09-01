@@ -28,6 +28,7 @@ export const useForm = () => {
   document.addEventListener("click", (event) => {
     form_Data.fullName = $name.value;
     form_Data.phone = $phone.value;
+
     if (
       event.target == $button &&
       form_Data.fullName != "" &&
@@ -37,7 +38,7 @@ export const useForm = () => {
       $overlay.style.display = "none";
       $html.classList.remove("zf-has-scroll", "is-reveal-open");
       showThanks(form_Data.fullName);
-      fetch("send.php", {
+      fetch("/js/server.js", {
         // файл-обработчик
         method: "POST",
         headers: {

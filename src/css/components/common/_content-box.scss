@@ -35,3 +35,15 @@
     line-height: 25px;
   }
 }
+.active {
+  animation: addBlink 1.5s linear alternate infinite;
+}
+
+@keyframes addBlink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

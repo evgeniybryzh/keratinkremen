@@ -1,7 +1,7 @@
 {
   "name": "gulp",
   "version": "1.0.0",
-  "description": "",
+  "description": "<p align=\"center\">   <a href=\"https://gulpjs.com\">     <img height=\"257\" width=\"114\" src=\"https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-2x.png\">   </a>   <h1 align=\"center\">Gulp config</h1> </p>",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
@@ -53,6 +53,16 @@
     "through2": "^3.0.1"
   },
   "dependencies": {
-    "jquery": "^3.5.1"
-  }
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "nodemailer": "^6.4.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evgeniybryzh/keratinkremen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/evgeniybryzh/keratinkremen/issues"
+  },
+  "homepage": "https://github.com/evgeniybryzh/keratinkremen#readme"
 }

@@ -35,7 +35,7 @@
   &__l-button {
     background-color: transparent;
     border: 3px solid $pink;
-    padding: 20px 40px;
+
     border-radius: 10px;
     @include font("sans-serif", 30px, 500, $white-smoke);
     font-style: italic;
@@ -121,6 +121,7 @@
     font-style: italic;
     text-shadow: 0 0 3px $dark;
     text-align: center;
+
     @include media-q($phablet-big) {
       @include font("sans-serif", 20px, 600, $white);
       font-style: italic;
@@ -135,6 +136,7 @@
   &__question-box {
     box-shadow: 0 0 0 2px $white-smoke, 0 0 0 3px $pink;
     border-radius: 0px;
+    background-color: rgba($grey, $alpha: 0.9);
     @include flex-main(row, space-between, center);
     padding: 5px;
     margin-bottom: 20px;
