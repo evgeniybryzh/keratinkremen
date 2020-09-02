@@ -14,5 +14,3 @@ useForm();
 useGenerator();
 showQuestions();
 getLogic();
-
-$;

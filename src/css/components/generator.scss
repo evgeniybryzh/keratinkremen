@@ -10,6 +10,14 @@
     background-attachment: fixed;
     padding: 20px 50px;
   }
+  &__maintitle {
+    position: absolute;
+    margin: 0 auto;
+    bottom: -10px;
+    @include font("sans-serif", 50px, 500, $white);
+    letter-spacing: 8px;
+    text-align: center;
+  }
   &__container {
     min-height: 100vh;
     position: relative;
@@ -95,14 +103,15 @@
     text-shadow: 0 0 3px $white;
     line-height: 25px;
     margin-bottom: 20px;
+    text-shadow: 0px 3px 5px $pink;
     &:last-of-type {
       padding-bottom: 0px;
     }
     @include media-q($phablet-big) {
       padding-bottom: 30px;
-      @include font("sans-serif", 30px, 600, $pink);
+      @include font("sans-serif", 30px, 600, $white);
       font-style: italic;
-      text-shadow: 0 0 3px $white;
+      text-shadow: 0px 3px 5px $pink;
       line-height: 40px;
       &:last-of-type {
         padding-bottom: 0px;
@@ -112,6 +121,10 @@
   &__row {
     width: 100%;
     margin-bottom: 30px;
+    @include flex-main;
+    transition: 0.2s ease all;
+    overflow-x: hidden;
+    padding-top: 10px;
   }
   &__question {
     margin-right: 2px;
@@ -121,12 +134,15 @@
     font-style: italic;
     text-shadow: 0 0 3px $dark;
     text-align: center;
+    transition: 0.2s ease all;
+    text-shadow: 0px 3px 5px $pink;
 
-    @include media-q($phablet-big) {
+    @include media-q($tablet-wide) {
       @include font("sans-serif", 20px, 600, $white);
       font-style: italic;
       text-shadow: 0 0 3px $dark;
       text-align: center;
+      text-shadow: 0px 3px 5px $pink;
     }
   }
   &__choices {
@@ -137,14 +153,21 @@
     box-shadow: 0 0 0 2px $white-smoke, 0 0 0 3px $pink;
     border-radius: 0px;
     background-color: rgba($grey, $alpha: 0.9);
-    @include flex-main(row, space-between, center);
+    @include flex-main(column, space-between, center);
     padding: 5px;
     margin-bottom: 20px;
+    transition: 0.2s ease all;
+    min-height: 90px;
+
     @include media-q($phablet-big) {
       box-shadow: 0 0 0 3px $white-smoke, 0 0 0 6px $pink;
       border-radius: 2px;
-      display: block;
+      transition: 0.2s ease all;
+      min-height: 110px;
     }
+  }
+  &__question-box:not(:first-of-type) {
+    display: none;
   }
   &__label {
     @include font("sans-serif", 20px, 600, $white);
@@ -152,6 +175,7 @@
     border-radius: 5px;
     width: 50px;
     @include transition-basic;
+    border: 1px solid white;
 
     @include media-q($phablet) {
       @include font("sans-serif", 20px, 600, $white);

@@ -6,7 +6,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>KeratinKremen</title>
-  <link rel="shortcut icon" href="images/Iconarchive-Red-Orb-Alphabet-Letter-K.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/Iconarchive-Red-Orb-Alphabet-Letter-K.ico" type="image/x-icon" />
   <link rel="stylesheet" href="css/foundation.css" />
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
@@ -57,25 +57,15 @@
     <div class="header__content-box content-box container">
       <div class="content-box__content grid-y">
         <div class="cell small-1 medium-3"></div>
-        <h2 id="title" class="content-box__subtitle cell small-2 medium-1">
-
-        </h2>
-        <h1 id="subtitle" class="content-box__title cell small-2 medium-1">
-
-        </h1>
+        <h2 id="title" class="content-box__subtitle cell small-2 medium-1"></h2>
+        <h1 id="subtitle" class="content-box__title cell small-2 medium-1"></h1>
         <ul class="content-box__list cell small-2">
           <li class="content-box__list-item">
             Кератиновое выпрямление волос
           </li>
-          <li class="content-box__list-item">
-            Ботокс волос
-          </li>
-          <li class="content-box__list-item">
-            Нанопластика
-          </li>
-          <li class="content-box__list-item">
-            Холодное восстановление
-          </li>
+          <li class="content-box__list-item">Ботокс волос</li>
+          <li class="content-box__list-item">Нанопластика</li>
+          <li class="content-box__list-item">Холодное восстановление</li>
         </ul>
         <a href="#" data-open="form" class="content-box__button button large">Записаться на процедуру</a>
       </div>
@@ -93,12 +83,8 @@
             <h3 class="greet__subtitle cell small-3">
               С любовью к Вашим волосам!
             </h3>
-            <h2 class="greet__title cell small-2">
-              Keratin Kremen
-            </h2>
-            <h2 class="greet__title cell small-2">
-              STUDIO
-            </h2>
+            <h2 class="greet__title cell small-2">Keratin Kremen</h2>
+            <h2 class="greet__title cell small-2">STUDIO</h2>
             <p class="greet__text cell small-3">
               Приглашаем всех желающих посетить уютный салон в Кременчуге для
               проведения процедур: Кератиновое выпрямление волос, Ботокс
@@ -124,9 +110,7 @@
         </div>
         <div class="greet__row-card cell small-12 large-4">
           <img src="images/img3.jpg" alt="image" class="greet__image" />
-          <h2 class="greet__card-title cell small-3">
-            Ботокс волос
-          </h2>
+          <h2 class="greet__card-title cell small-3">Ботокс волос</h2>
           <p class="greet__card-text cell small-3">
             Процедура ботокса - это лечебная процедура, которая направлена на
             восстановление и оздоровление волос с помощью специального
@@ -144,9 +128,7 @@
         </div>
         <div class="greet__row-card cell small-12 large-4">
           <img src="images/img4.jpg" alt="image" class="greet__image" />
-          <h2 class="greet__card-title cell small-3">
-            Нанопластика волос
-          </h2>
+          <h2 class="greet__card-title cell small-3">Нанопластика волос</h2>
           <p class="greet__card-text cell small-3">
             Нанопластика волос - это инновационный метод, в основе которого
             лежит не только внешнее улучшение состояния волос, но и
@@ -224,8 +206,12 @@
     </div>
   </section>
   <section class="generator">
+
     <div class="container generator__container">
-      <button id="generator-button" class="generator__button button">Подобрать процедуру</button>
+      <h2 id="mtitle" class="generator__maintitle">Procedure generator </h2>
+      <button id="generator-button" class="generator__button button">
+        Подобрать процедуру
+      </button>
       <div id="gen-body" class="generator__body animate__animated animate__fadeIn">
         <div class="generator__questions">
           <div class="foreground"></div>
@@ -234,83 +220,76 @@
           </div>
           <div class="background"></div>
           <div class="generator__upper-box">
-
-            <h2 class="generator__title">Ответьте на пару вопросов и мы подберем для вас процедуру</h2>
-            <div class="generator__row grid-x grid-margin-x  ">
+            <h2 class="generator__title">
+              Ответьте на пару вопросов и мы подберем для вас процедуру
+            </h2>
+            <div class="generator__row grid-x grid-margin-x">
               <!-- QUESTION 1 -->
-              <div class="generator__question-box cell small-12 medium-6 large-3 ">
+              <div
+                class="generator__question-box cell small-12 medium-6 large-3 animate__animated animate__backInRight ">
                 <h3 id="question-1" class="generator__question">-</h3>
                 <fieldset class="generator__choices">
                   <input hidden class="generator__input" type="radio" name="question-1" value="Да" id="q1"
-                    required><label class="generator__label" for="q1">Да</label>
-                  <input hidden class="generator__input" type="radio" name="question-1" value="Нет" id="q2"><label
-                    class="generator__label" for="q2">Нет</label>
-
+                    required /><label id="lq1" class="generator__label" for="q1">Да</label>
+                  <input hidden class="generator__input" type="radio" name="question-1" value="Нет" id="q2" /><label
+                    id="lq2" class="generator__label" for="q2">Нет</label>
                 </fieldset>
               </div>
               <!-- QUESTION 2 -->
-              <div class="generator__question-box cell small-12 medium-6 large-3 ">
+              <div
+                class="generator__question-box cell small-12 medium-6 large-3 animate__animated animate__backInRight ">
                 <h3 id="question-2" class="generator__question">-</h3>
                 <fieldset class="generator__choices">
                   <input hidden class="generator__input" type="radio" name="question-2" value="Да" id="q3"
-                    required><label class="generator__label" for="q3">Да</label>
-                  <input hidden class="generator__input" type="radio" name="question-2" value="Нет" id="q4"><label
-                    class="generator__label" for="q4">Нет</label>
-
+                    required /><label id="lq3" class="generator__label" for="q3">Да</label>
+                  <input hidden class="generator__input" type="radio" name="question-2" value="Нет" id="q4" /><label
+                    id="lq4" class="generator__label" for="q4">Нет</label>
                 </fieldset>
               </div>
               <!-- QUESTION 3 -->
-              <div class="generator__question-box cell small-12 medium-6 large-3 ">
+              <div
+                class="generator__question-box cell small-12 medium-6 large-3 animate__animated animate__backInRight ">
                 <h3 id="question-3" class="generator__question">-</h3>
                 <fieldset class="generator__choices">
                   <input hidden class="generator__input" type="radio" name="question-3" value="Да" id="q5"
-                    required><label class="generator__label" for="q5">Да</label>
-                  <input hidden class="generator__input" type="radio" name="question-3" value="Нет" id="q6"><label
-                    class="generator__label" for="q6">Нет</label>
-
+                    required /><label id="lq5" class="generator__label" for="q5">Да</label>
+                  <input hidden class="generator__input" type="radio" name="question-3" value="Нет" id="q6" /><label
+                    id="lq6" class="generator__label" for="q6">Нет</label>
                 </fieldset>
               </div>
               <!-- QUESTION 4 -->
-              <div class="generator__question-box cell small-12 medium-6 large-3 ">
+              <div
+                class="generator__question-box cell small-12 medium-6 large-3 animate__animated animate__backInRight ">
                 <h3 id="question-4" class="generator__question">-</h3>
                 <fieldset class="generator__choices">
                   <input hidden class="generator__input" type="radio" name="question-4" value="Да" id="q7"
-                    required><label class="generator__label" for="q7">Да</label>
-                  <input hidden class="generator__input" type="radio" name="question-4" value="Нет" id="q8"><label
-                    class="generator__label" for="q8">Нет</label>
-
+                    required /><label id="lq7" class="generator__label" for="q7">Да</label>
+                  <input hidden class="generator__input" type="radio" name="question-4" value="Нет" id="q8" /><label
+                    id="lq8" class="generator__label" for="q8">Нет</label>
                 </fieldset>
               </div>
             </div>
-            <button id="generator-btn" class="generator__l-button button">Подобрать</button>
+
           </div>
-
-
-
         </div>
-
-
-
       </div>
       <div id="gen-second-body" class="generator__body animate__animated animate__fadeIn">
-
-
-
         <div class="tuna"></div>
 
+        <h2 class="generator__title">
 
-        <h2 class="generator__title">Изходя из ваших данных, вам подходит: <span id="decition"
-            class="generator__big animate__animated animate__flash slower animate__delay-1s"></span>
+          <span id="decition" class="generator__big animate__animated animate__flash slower animate__delay-1s"></span>
         </h2>
-        <h3 class="generator__subtitle">Наши специалисты обьяснят что это значит и <span
-            class="generator__free">бессплатно</span> проконсультируют вас по любому вопросу</h3>
-        <button data-open="form" id="gen-form-button" class=" generator__l-button button">Перезвоните мне</button>
-
+        <h3 class="generator__subtitle">
+          Наши специалисты обьяснят что это значит и
+          <span class="generator__free">бессплатно</span> проконсультируют вас
+          по поводу процедур.
+        </h3>
+        <button data-open="form" id="gen-form-button" class="generator__l-button button">
+          Перезвоните мне
+        </button>
       </div>
     </div>
-
-
-
   </section>
   <section id="third" class="gallery">
     <h2 class="gallery__title">GALLERY</h2>
@@ -329,25 +308,21 @@
             <li class="is-active orbit-slide">
               <figure class="orbit-figure">
                 <img class="orbit-image" src="https://www.fillmurray.com/640/360" alt="Space" />
-
               </figure>
             </li>
             <li class="is-active orbit-slide">
               <figure class="orbit-figure">
                 <img class="orbit-image" src="https://www.fillmurray.com/640/360" alt="Space" />
-
               </figure>
             </li>
             <li class="is-active orbit-slide">
               <figure class="orbit-figure">
                 <img class="orbit-image" src="https://www.fillmurray.com/640/360" alt="Space" />
-
               </figure>
             </li>
             <li class="is-active orbit-slide">
               <figure class="orbit-figure">
                 <img class="orbit-image" src="https://www.fillmurray.com/640/360" alt="Space" />
-
               </figure>
             </li>
           </ul>
@@ -605,7 +580,9 @@
       Запишись на процедуру через сайт и получи скидку
       <span class="sale__pinked">10%</span>
     </h3>
-    <button data-open="form" class="sale__button button expanded large">Записаться на процедуру</button>
+    <button data-open="form" class="sale__button button expanded large">
+      Записаться на процедуру
+    </button>
   </section>
   <section id="six" class="comments">
     <div class="container">
@@ -613,7 +590,7 @@
         <div class="comments__box cell small-12 medium-6">
           <h2 class="comments__title">Отзывы наших клиентов</h2>
           <ul class="accordion comments__accordion" data-allow-all-closed="true" data-accordion>
-            <li class="accordion-item comments__accordion-item " data-accordion-item>
+            <li class="accordion-item comments__accordion-item" data-accordion-item>
               <a href="#" class="accordion-title comments__accordion-title">Ольга</a>
               <div class="accordion-content comments__accordion-content" data-tab-content>
                 <img class="comments__accordion-image" src="images/img1.jpg" alt="image" />
@@ -645,6 +622,8 @@
                   блестящие!
                 </p>
               </div>
+            </li>
+
             <li class="accordion-item comments__accordion-item" data-accordion-item>
               <a href="#" class="accordion-title comments__accordion-title">Виктория</a>
               <div class="accordion-content comments__accordion-content" data-tab-content>
@@ -666,7 +645,6 @@
                   блестящие!
                 </p>
               </div>
-
             </li>
             <li class="accordion-item comments__accordion-item" data-accordion-item>
               <a href="#" class="accordion-title comments__accordion-title">Клава</a>
@@ -678,7 +656,6 @@
                   блестящие!
                 </p>
               </div>
-
             </li>
             <li class="accordion-item comments__accordion-item" data-accordion-item>
               <a href="#" class="accordion-title comments__accordion-title">Любовь</a>
@@ -690,7 +667,6 @@
                   блестящие!
                 </p>
               </div>
-
             </li>
           </ul>
         </div>
@@ -698,30 +674,36 @@
           <h2 class="comments__title">Свяжитесь с нами!</h2>
           <div class="comments__info">
             <div class="comments__wrapper">
-              <img src="images/comm1.png" alt="image" class="comments__logo">
+              <img src="images/comm1.png" alt="image" class="comments__logo" />
               <h2 class="comments__name">Адрес салона:</h2>
             </div>
-            <p class="comments__text"> Кременчуг,&nbsp; Полтавская область,&nbsp; улица Европейская,&nbsp; 64
+            <p class="comments__text">
+              Кременчуг,&nbsp; Полтавская область,&nbsp; улица
+              Европейская,&nbsp; 64
             </p>
           </div>
           <div class="comments__info">
             <div class="comments__wrapper">
-              <img src="images/comm2.png" alt="image" class="comments__logo">
-              <h2 class="comments__name">Viber, Telegram (запись, консультация):</h2>
+              <img src="images/comm2.png" alt="image" class="comments__logo" />
+              <h2 class="comments__name">
+                Viber, Telegram (запись, консультация):
+              </h2>
             </div>
             <p class="comments__text">(097)954-35-32) - Ольга</p>
             <p class="comments__text">(095)335-10-52) - Александра</p>
           </div>
           <div class="comments__info">
             <div class="comments__wrapper">
-              <img src="images/comm3.png" alt="image" class="comments__logo">
+              <img src="images/comm3.png" alt="image" class="comments__logo" />
               <h2 class="comments__name">Без выходных: с 8:00 до 20:00.</h2>
             </div>
-            <p class="comments__text">Предварительная запись по указанному номеру телефона</p>
+            <p class="comments__text">
+              Предварительная запись по указанному номеру телефона
+            </p>
           </div>
-          <button data-open="form" class="comments__button button expanded large">Записаться на
-            процедуру</button>
-
+          <button data-open="form" class="comments__button button expanded large">
+            Записаться на процедуру
+          </button>
         </div>
       </div>
     </div>
@@ -730,18 +712,18 @@
     name="call-form">
     <h2 class="form__title">Заполните форму и мы вам перезвоним!</h2>
     <input id="name" name="fullName" type="text" class="form__input" required data-form-error-on="required"
-      placeholder="Введите ваше имя">
+      placeholder="Введите ваше имя" />
     <input id="phone" name="mPhone" type="number" class="form__input" required data-form-error-on="required"
-      placeholder="Введите ваш номер телефона">
-    <button id="form-button" class="button form__button">Отправить заявку</button>
+      placeholder="Введите ваш номер телефона" />
+    <button id="form-button" class="button form__button">
+      Отправить заявку
+    </button>
     <button class="close-button" data-close aria-label="Close modal" type="button">
       <span aria-hidden="true">&times;</span>
     </button>
-
-
   </form>
   <footer class="footer">
-    <img src="images/logo.png" alt="logo" class="footer__logo">
+    <img src="images/logo.png" alt="logo" class="footer__logo" />
     <h6 class="footer__info">Copyright © 2020, KeratinKremen</h6>
   </footer>
 
@@ -751,7 +733,6 @@
   <script src="js/foundation.js"></script>
 
   <script src="js/app.js"></script>
-
 </body>
 
 </html>
