@@ -6,11 +6,12 @@ import { startTitileShow } from "./m-page-title";
 
 var $ = require("jquery");
 
-// const { useForm } = require("./form");
-Foundation.addToJquery($);
-$(document).foundation();
-startTitileShow();
-useForm();
-useGenerator();
-showQuestions();
-getLogic();
+document.addEventListener("DOMContentLoaded", function () {
+  Foundation.addToJquery($);
+  $(document).foundation();
+  startTitileShow();
+  useForm();
+  useGenerator();
+  showQuestions();
+  getLogic();
+});

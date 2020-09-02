@@ -62,13 +62,9 @@ const generateAnswers = () => {
 };
 
 const renderChoices = (answers) => {
-  const $mainButton = document.getElementById("generator-button");
-  const $secButton = document.getElementById("generator-btn");
-  const $finButton = document.getElementById("gen-form-button");
   const $genBody = document.getElementById("gen-body");
   const $genSecBody = document.getElementById("gen-second-body");
-  const labels = document.getElementsByClassName("generator__label");
-  const qBoxes = document.getElementsByClassName("generator__question-box");
+
   let decition = "У вас особый случай, свяжитесь с нами за доп. инфо.";
   const $decition = document.getElementById("decition");
   if (answers.q1 === "Да") {
