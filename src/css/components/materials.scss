@@ -11,12 +11,20 @@
   &__text {
     @include font("sans-serif", 15px, 500, $dark);
     font-style: italic;
-    text-align: center;
+    text-align: start;
   }
   &__box {
+    padding: 0px;
     padding: 10px;
     &:first-of-type {
-      @include flex-main;
+      @include flex-main(row, center, center);
+    }
+    @include media-q($tablet-wide) {
+      padding: 0px;
+      padding: 10px;
+      &:first-of-type {
+        @include flex-main(row, flex-start, center);
+      }
     }
   }
 }

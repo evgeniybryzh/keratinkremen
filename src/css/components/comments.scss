@@ -28,7 +28,7 @@
   &__accordion-text {
     @include font("sans-serif", 15px, 600, $dark);
     font-style: italic;
-    text-align: center;
+    text-align: start;
   }
   &__logo {
     width: 30px;
@@ -46,13 +46,14 @@
   &__text {
     @include font("sans-serif", 17px, 600, $dark);
     font-style: italic;
-    text-align: center;
+    text-align: start;
   }
   &__info {
-    @include flex-main(column, flex-start, center);
+    @include flex-main(column, flex-start, flex-start);
     background-color: $pink;
     padding: 10px;
     width: 100%;
+
     border-bottom: 2px solid $white;
     &:first-of-type {
       border-radius: 10px 10px 0 0;

@@ -1,9 +1,9 @@
 .prices {
-  padding: 50px 20px;
+  padding: 30px 20px;
   &__title {
     @include font("sans-serif", 40px, 600, $pink);
     font-style: italic;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     text-align: center;
     border-bottom: 2px solid $pink;
   }
@@ -33,7 +33,7 @@
     list-style: square;
     @include font("sans-serif", 20px, 600, $dark);
     font-style: italic;
-    letter-spacing: 2px;
+    letter-spacing: 0px;
   }
   &__pinked {
     color: $pink;
@@ -42,6 +42,6 @@
     border-radius: 5px;
     border-top: 2px solid $pink;
     box-shadow: 0 0 0 3px $white-smoke, 0 0 0 4px rgba(154, 147, 140, 0.5);
-    min-height: 400px;
+    min-height: 300px;
   }
 }

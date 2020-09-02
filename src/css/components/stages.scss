@@ -33,7 +33,8 @@
   &__text {
     @include font("sans-serif", 15px, 600, $dark);
     font-style: italic;
-    text-align: center;
+
+    text-align: start;
   }
   &__context-box {
     @include flex-main(column, center, center);

@@ -5,9 +5,10 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  padding: 30px 50px;
+  padding: 10px 10px;
   @include media-q($tablet) {
     background-attachment: fixed;
+    padding: 30px 20px;
   }
 
   &__title {

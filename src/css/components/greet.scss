@@ -14,14 +14,15 @@
   &__subtitle {
     @include font("sans-serif", 40px, 500, $dark);
     font-style: italic;
-    @include flex-main(row, center, flex-end);
+    @include flex-main(row, flex-start, flex-end);
     margin-bottom: 25px;
   }
   &__title {
     @include font("sans-serif", 60px, 600, $pink);
+
     line-height: 50px;
     font-style: italic;
-    @include flex-main(row, center, center);
+    @include flex-main(row, flex-start, center);
     margin-bottom: 20px;
     &:not(:first-of-type) {
       align-items: flex-start;
@@ -30,8 +31,8 @@
   &__text {
     @include font("sans-serif", 20px, 500, $dark);
     line-height: 25px;
-    @include flex-main(row, center, flex-start);
-    text-align: center;
+    @include flex-main(row, flex-start, flex-start);
+
     margin-bottom: 70px;
   }
   &__card-title {
@@ -44,6 +45,6 @@
     @include font("sans-serif", 20px, 500, $dark);
     line-height: 25px;
     @include flex-main(row, center, flex-start);
-    text-align: center;
+    text-align: start;
   }
 }
