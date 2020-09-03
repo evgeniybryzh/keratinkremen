@@ -17,6 +17,34 @@
 
 <body>
   <header class="header" id="header">
+    <div id="burger" class="burger">
+
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </div>
+    <div id="b-menu" class="burger-menu">
+      <ul class="burger-menu__list">
+        <li class="burger-menu__item">
+          <a class="burger-menu__link" href="#first">О ботоксе и кератине</a>
+        </li>
+        <li class="burger-menu__item">
+          <a class="burger-menu__link" href="#second">О процедуре</a>
+        </li>
+        <li class="burger-menu__item">
+          <a class="burger-menu__link" href="#third">Галлерея</a>
+        </li>
+        <li class="burger-menu__item">
+          <a class="burger-menu__link" href="#fourth">Материалы</a>
+        </li>
+        <li class="burger-menu__item">
+          <a class="burger-menu__link" href="#fiveth">Цены</a>
+        </li>
+        <li class="burger-menu__item">
+          <a class="burger-menu__link" href="#six">Контакты</a>
+        </li>
+      </ul>
+    </div>
     <div class="header__menu menu-box">
       <div class="container">
         <div class="men-box__wrapper grid-x grid-padding-y grid-padding-x">
@@ -95,7 +123,10 @@
       </div>
       <div class="geet__row grid-x grid-margin-x grid-padding-y">
         <div class="greet__row-card cell small-12 large-4">
-          <img src="images/img2.jpg" alt="image" class="greet__image" />
+          <div class="greet__image-wrapper">
+            <img src="images/img2.jpg" alt="image" class="greet__image" />
+          </div>
+
           <h2 class="greet__card-title cell small-3">
             Кератиновое выпрямление
           </h2>
@@ -109,7 +140,10 @@
           </p>
         </div>
         <div class="greet__row-card cell small-12 large-4">
-          <img src="images/img3.jpg" alt="image" class="greet__image" />
+          <div class="greet__image-wrapper">
+            <img src="images/img3.jpg" alt="image" class="greet__image" />
+          </div>
+
           <h2 class="greet__card-title cell small-3">Ботокс волос</h2>
           <p class="greet__card-text cell small-3">
             Процедура ботокса - это лечебная процедура, которая направлена на
@@ -127,7 +161,10 @@
           </p>
         </div>
         <div class="greet__row-card cell small-12 large-4">
-          <img src="images/img4.jpg" alt="image" class="greet__image" />
+          <div class="greet__image-wrapper">
+            <img src="images/img4.jpg" alt="image" class="greet__image" />
+          </div>
+
           <h2 class="greet__card-title cell small-3">Нанопластика волос</h2>
           <p class="greet__card-text cell small-3">
             Нанопластика волос - это инновационный метод, в основе которого
@@ -206,9 +243,8 @@
     </div>
   </section>
   <section class="generator">
-
     <div class="container generator__container">
-      <h2 id="mtitle" class="generator__maintitle">Procedure generator </h2>
+      <h2 id="mtitle" class="generator__maintitle">Procedure generator</h2>
       <button id="generator-button" class="generator__button button">
         Подобрать процедуру
       </button>
@@ -226,7 +262,7 @@
             <div class="generator__row grid-x grid-margin-x">
               <!-- QUESTION 1 -->
               <div
-                class="generator__question-box cell small-12 medium-6 large-3 animate__animated animate__backInRight ">
+                class="generator__question-box cell small-12 medium-6 large-3 animate__animated animate__backInRight">
                 <h3 id="question-1" class="generator__question">-</h3>
                 <fieldset class="generator__choices">
                   <input hidden class="generator__input" type="radio" name="question-1" value="Да" id="q1"
@@ -237,7 +273,7 @@
               </div>
               <!-- QUESTION 2 -->
               <div
-                class="generator__question-box cell small-12 medium-6 large-3 animate__animated animate__backInRight ">
+                class="generator__question-box cell small-12 medium-6 large-3 animate__animated animate__backInRight">
                 <h3 id="question-2" class="generator__question">-</h3>
                 <fieldset class="generator__choices">
                   <input hidden class="generator__input" type="radio" name="question-2" value="Да" id="q3"
@@ -248,7 +284,7 @@
               </div>
               <!-- QUESTION 3 -->
               <div
-                class="generator__question-box cell small-12 medium-6 large-3 animate__animated animate__backInRight ">
+                class="generator__question-box cell small-12 medium-6 large-3 animate__animated animate__backInRight">
                 <h3 id="question-3" class="generator__question">-</h3>
                 <fieldset class="generator__choices">
                   <input hidden class="generator__input" type="radio" name="question-3" value="Да" id="q5"
@@ -259,7 +295,7 @@
               </div>
               <!-- QUESTION 4 -->
               <div
-                class="generator__question-box cell small-12 medium-6 large-3 animate__animated animate__backInRight ">
+                class="generator__question-box cell small-12 medium-6 large-3 animate__animated animate__backInRight">
                 <h3 id="question-4" class="generator__question">-</h3>
                 <fieldset class="generator__choices">
                   <input hidden class="generator__input" type="radio" name="question-4" value="Да" id="q7"
@@ -269,7 +305,6 @@
                 </fieldset>
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -277,7 +312,6 @@
         <div class="tuna"></div>
 
         <h2 class="generator__title">
-
           <span id="decition" class="generator__big animate__animated animate__flash slower animate__delay-1s"></span>
         </h2>
         <h3 class="generator__subtitle">
@@ -584,7 +618,7 @@
       Записаться на процедуру
     </button>
   </section>
-  <section id="six" class="comments">
+  <section class="comments">
     <div class="container">
       <div class="comments__row grid-x grid-padding-y grid-margin-x">
         <div class="comments__box cell small-12 medium-6">
@@ -670,7 +704,7 @@
             </li>
           </ul>
         </div>
-        <div class="comments__content-box cell small-12 medium-6">
+        <div id="six" class="comments__content-box cell small-12 medium-6">
           <h2 class="comments__title">Свяжитесь с нами!</h2>
           <div class="comments__info">
             <div class="comments__wrapper">

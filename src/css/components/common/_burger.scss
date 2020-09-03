@@ -1,0 +1,54 @@
+.burger {
+  position: fixed;
+  right: 30px;
+  top: 25px;
+  z-index: 100;
+  border: 1px solid $pink;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: $pink;
+}
+
+@include burger;
+
+.active-burger {
+  span:before {
+    width: 25px;
+  }
+  span:after {
+    width: 15px;
+  }
+}
+.burger-menu {
+  transition: 0.3s ease all;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($color: $dark, $alpha: 0.9);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 50;
+  transform: translateY(-100%);
+
+  padding: 90px 20px 20px 20px;
+  &__list {
+    height: 100%;
+    padding: 20px;
+    @include flex-main(column, space-around, flex-start);
+    border: 2px solid $pink;
+    margin: 0;
+  }
+  &__item {
+    width: 100%;
+    border-bottom: 2px solid $white;
+    text-align: center;
+  }
+  &__link {
+    @include font(sans-serif, 25px, 500, $white);
+    text-shadow: 1px 2px 2px $footer-bg-color;
+    margin: 5px 10px 5px 10px;
+  }
+}

@@ -22,6 +22,12 @@ const notify = require("gulp-notify");
 const htmlValidator = require("gulp-w3c-html-validator");
 const builtins = require("rollup-plugin-node-builtins");
 const json = require("@rollup/plugin-json");
+var gulp = require("gulp");
+var ghPages = require("gulp-gh-pages");
+
+gulp.task("deploy", function () {
+  return gulp.src("./build/**/*").pipe(ghPages());
+});
 
 const emptyPipe = () => {
   var through = require("through2");

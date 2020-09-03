@@ -7,6 +7,18 @@
     min-height: 400px;
     padding: 5px;
   }
+  &__image-wrapper {
+    @include flex-main();
+  }
+  &__row-image {
+    @include flex-main();
+    padding-right: 10px;
+    @include media-q($desktop) {
+      @include flex-main(row, flex-start, center);
+      padding-right: 10px;
+    }
+  }
+
   &__column {
     height: 100%;
   }

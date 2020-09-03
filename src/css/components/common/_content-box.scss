@@ -1,5 +1,8 @@
 .content-box {
-  padding: 0 0px;
+  padding: 0 20px;
+  @include media-q($desktop-wide) {
+    padding: 0 0px;
+  }
   &__content {
     height: 800px;
   }

@@ -5,6 +5,7 @@
   background-position: center;
   background-size: cover;
   animation: none;
+
   @include media-q($tablet-w-wide) {
     background-attachment: fixed;
     animation: bg 10s ease-in-out infinite alternate;

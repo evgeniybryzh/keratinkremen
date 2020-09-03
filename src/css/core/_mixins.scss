@@ -53,33 +53,34 @@
 //burger
 @mixin burger {
   .burger {
-    width: 40px;
-    height: 40px;
+    width: 55px;
+    height: 55px;
     @include flex-main(column, center, center);
+    cursor: pointer;
+    @include media-q($tablet-small) {
+      width: 40px;
+      height: 40px;
+      display: none;
+      cursor: pointer;
+    }
   }
   .burger span,
   .burger span:before,
   .burger span:after {
     border-radius: 1px;
-    height: 3px;
-    width: 35px;
-    background: white;
+    height: 4px;
+    width: 55px;
+    background: $footer-bg-color;
     position: absolute;
     display: block;
     content: "";
     transition: all 0.3s ease;
   }
   .burger span:before {
-    top: -10px;
+    top: -14px;
   }
   .burger span:after {
-    bottom: -10px;
-  }
-  .burger:hover span:before {
-    width: 25px;
-  }
-  .burger:hover span:after {
-    width: 15px;
+    bottom: -14px;
   }
 }
 // Basic transition

@@ -15,17 +15,14 @@
   &__box {
     @include flex-main(column, center, center);
     text-align: center;
-    border-bottom: 2px solid $pink;
+
     padding: 10px;
-    &:nth-child(1) {
-      border-right: 2px solid $pink;
-    }
-    &:nth-child(2) {
-      border-left: 2px solid $pink;
-    }
   }
   &__row {
-    // padding-top: 30px;
+    border: 3px ridge $pink;
+    &:first-of-type {
+      margin-bottom: 20px;
+    }
   }
   &__link {
     color: $pink;
@@ -33,25 +30,24 @@
   &__text {
     @include font("sans-serif", 15px, 600, $dark);
     font-style: italic;
-
     text-align: start;
+    &:nth-child(3) {
+      border-bottom: 2px solid $pink;
+    }
+
+    @include media-q($tablet-wide) {
+      @include font("sans-serif", 15px, 600, $dark);
+      font-style: italic;
+      text-align: start;
+      &:nth-child(3) {
+        border-bottom: none;
+      }
+    }
   }
   &__context-box {
     @include flex-main(column, center, center);
-    border-bottom: 2px solid $pink;
+
     padding: 10px;
-    &:nth-child(1) {
-      border-right: 2px solid $pink;
-    }
-    &:nth-child(2) {
-      border-left: 2px solid $pink;
-    }
-    &:nth-child(3) {
-      border-right: 2px solid $pink;
-    }
-    &:nth-child(4) {
-      border-left: 2px solid $pink;
-    }
   }
   &__image {
     width: 100px;
