@@ -1,6 +1,6 @@
 .header {
   min-height: 100vh;
-  background-image: url(../images/bg.webp);
+  background-image: url(../images/bg.jpg);
   background-attachment: inherit;
   background-position: center;
   background-size: cover;
@@ -13,10 +13,10 @@
 }
 @keyframes bg {
   0% {
-    background-size: 190%;
+    background-size: 160%;
   }
 
   100% {
-    background-size: 180%;
+    background-size: 170%;
   }
 }
