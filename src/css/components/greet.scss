@@ -12,7 +12,7 @@
   }
   &__row-image {
     @include flex-main();
-    padding-right: 10px;
+    padding-right: 0px;
     @include media-q($desktop) {
       @include flex-main(row, flex-start, center);
       padding-right: 10px;

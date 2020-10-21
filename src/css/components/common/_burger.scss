@@ -3,10 +3,9 @@
   right: 30px;
   top: 25px;
   z-index: 100;
-  border: 1px solid $pink;
   border-radius: 50%;
   overflow: hidden;
-  background-color: $pink;
+ 
 }
 
 @include burger;

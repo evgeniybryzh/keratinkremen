@@ -2,13 +2,15 @@
   min-height: 100vh;
   background-image: url(../images/bg.jpg);
   background-attachment: inherit;
-  background-position: center;
+  background-position: 65%  ;
   background-size: cover;
   animation: none;
 
   @include media-q($tablet-w-wide) {
     background-attachment: fixed;
     animation: bg 10s ease-in-out infinite alternate;
+    background-position: center;
+    background-size: cover;
   }
 }
 @keyframes bg {

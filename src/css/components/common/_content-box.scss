@@ -1,7 +1,7 @@
 .content-box {
-  padding: 40px 20px 20px 20px ;
-  @include media-q($desktop-wide) {
-    padding: 0 0px;
+  padding: 10px 20px 20px 20px ;
+  @include media-q(374px) {
+    padding: 60px 20px 20px 20px ;
   }
   &__content {
     // height: 800px;
@@ -24,14 +24,28 @@
     }
   }
   &__subtitle {
-    @include font("sans-serif", 40px, 500, $white);
+    @include font("sans-serif", 28px, 500, $white);
     font-style: italic;
+    text-shadow: 0  0 20px #000;
+    @include media-q($phone-wide){
+      @include font("sans-serif", 40px, 500, $white);
+      text-shadow: none;
+      font-style: italic;
+
+    }
   }
   &__title {
-    @include font("sans-serif", 60px, 600, $pink);
-    // line-height: 15px;
+    @include font("sans-serif", 40px, 600, $pink);
     font-style: italic;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+    text-shadow: 0  0 5px #fff;
+    @include media-q($phone-wide){
+      @include font("sans-serif", 60px, 600, $pink);
+      text-shadow:none;
+      font-style: italic;
+      margin-bottom: 40px;
+
+    }
   }
   &__list-item {
     @include font("sans-serif", 20px, 500, $white);
