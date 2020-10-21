@@ -36,7 +36,7 @@
     }
 
     @include media-q($tablet-wide) {
-      @include font("sans-serif", 15px, 600, $dark);
+      @include font("sans-serif", 18px, 600, $dark);
       font-style: italic;
       text-align: start;
       &:nth-child(3) {
@@ -45,8 +45,7 @@
     }
   }
   &__context-box {
-    @include flex-main(column, center, center);
-
+    @include flex-main(column, flex-start, center);
     padding: 10px;
   }
   &__image {

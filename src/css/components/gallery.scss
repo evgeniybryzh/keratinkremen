@@ -18,3 +18,13 @@
 .orbit-previous {
   color: $pink;
 }
+.orbit-container{
+  max-height:90vh;
+}
+.orbit-figure{
+  @include flex-main;
+}
+.orbit-image{
+
+  width: 50%;
+}

@@ -22,7 +22,7 @@
     }
   }
   &__name {
-    @include font("sans-serif", 40px, 600, $dark);
+    @include font("sans-serif", 25px, 600, $dark);
     text-align: center;
   }
   &__price {
@@ -42,6 +42,6 @@
     border-radius: 5px;
     border-top: 2px solid $pink;
     box-shadow: 0 0 0 3px $white-smoke, 0 0 0 4px rgba(154, 147, 140, 0.5);
-    min-height: 300px;
+    min-height: 320px;
   }
 }

@@ -9,7 +9,7 @@
     border-bottom: 2px solid $pink;
   }
   &__text {
-    @include font("sans-serif", 15px, 500, $dark);
+    @include font("sans-serif", 18px, 500, $dark);
     font-style: italic;
     text-align: start;
   }
